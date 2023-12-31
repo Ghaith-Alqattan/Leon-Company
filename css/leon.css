@@ -209,7 +209,7 @@ font-family: 'Work Sans', sans-serif;
     grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
     grid-gap: 20px;
     justify-content: center;
-    margin: auto;
+    align-items: center;
 }
 .features .container .feat{
     padding:20px;
@@ -225,6 +225,14 @@ font-family: 'Work Sans', sans-serif;
 .features .container .feat p{
     color: #777;
     line-height: 1.7;
+}
+@media (max-width:767px){
+    .features .container{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px , 1fr));
+        justify-content: center;
+        align-items: center;
+    }
 }
 /* end features */
 /* start services */
@@ -242,6 +250,7 @@ font-family: 'Work Sans', sans-serif;
     grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
     grid-gap: 20px;
     justify-content: center;
+    align-items: center;
     margin-top: 100px;
 }
 .services .services-content .srv{
@@ -253,6 +262,14 @@ font-family: 'Work Sans', sans-serif;
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+}
+@media (max-width:767px){
+    .services .services-content{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px , 1fr));
+        justify-content: center;
+        align-items: center;
     }
 }
 .services .services-content .srv i{
@@ -311,6 +328,20 @@ font-family: 'Work Sans', sans-serif;
     justify-content: center;
     grid-gap: 30px;
     margin-top: 80px;
+}
+@media (max-width:767px){
+    .portfolio .portfolio-content{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px , 1fr));
+        justify-content: center;
+        align-items: center;
+    }
+    .special-heading{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px , 1fr));
+        justify-content: center;
+        align-items: center;
+    }
 }
 .portfolio .portfolio-content .card{
     background-color: white;
