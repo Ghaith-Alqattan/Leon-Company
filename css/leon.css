@@ -208,6 +208,7 @@ font-family: 'Work Sans', sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
     grid-gap: 20px;
+    justify-content: center;
     margin: auto;
 }
 .features .container .feat{
@@ -240,6 +241,7 @@ font-family: 'Work Sans', sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
     grid-gap: 20px;
+    justify-content: center;
     margin-top: 100px;
 }
 .services .services-content .srv{
@@ -306,6 +308,7 @@ font-family: 'Work Sans', sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
     background-color: #f6f6f6;
+    justify-content: center;
     grid-gap: 30px;
     margin-top: 80px;
 }
@@ -426,8 +429,15 @@ font-family: 'Work Sans', sans-serif;
     .contact .info .label ,
     .contact .info .link ,
     .social{
-        font-size: 20px;
+        font-size: 17px;
         margin: auto;
+    }
+    .contact .info .social{
+        font-size: 14px;
+        word-spacing: -1px;
+    }
+    .contact .info .social i{
+        font-size: 20px;
     }
 }
 /* end contact */
